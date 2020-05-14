@@ -1,26 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./css/App.css";
+import WOW from "wowjs";
+import { CircleArrow as ScrollUpButton } from "react-scroll-up-button";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Login from "./components/login/Login";
+import { Route, Switch } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import CourseList from "./components/CourseList";
+import Details from "./components/Details";
+import Default from "./components/Default";
+import Cart from "./components/Cart";
+import Modal from "./components/Modal";
+import Home from "./components/Home";
+class App extends Component {
+  componentDidMount() {
+    const wow = new WOW.WOW({ resetAnimation: true });
+    wow.init();
+  }
+  render() {
+    return (
+      <React.Fragment>
+        <Navbar />
+        <Switch>
+          <Route exact path="/" component={Home} />
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+          <Route exact path="/courselist" component={CourseList} />
+          <Route path="/details" component={Details} />
+          <Route path="/cart" component={Cart} />
+          <Route path="/login" component={Login} />
+
+          <Route component={Default} />
+        </Switch>
+        <Modal />
+
+        <ScrollUpButton />
+      </React.Fragment>
+    );
+  }
 }
 
 export default App;
