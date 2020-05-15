@@ -14,11 +14,14 @@ class ProductProvider extends Component {
     cartTax: 0,
     cartTotal: 0,
     isLogin: false,
+    search: "",
   };
   componentDidMount() {
     this.setProducts();
   }
-
+  updateSearch = (e) => {
+    this.setState({ search: e.target.value.substr(0, 20) });
+  };
   setProducts = () => {
     let products = [];
     storeProducts.forEach((item) => {
@@ -145,6 +148,7 @@ class ProductProvider extends Component {
           decrement: this.decrement,
           removeItem: this.removeItem,
           clearCart: this.clearCart,
+          updateSearch: this.updateSearch,
         }}
       >
         {this.props.children}

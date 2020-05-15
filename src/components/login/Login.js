@@ -47,7 +47,7 @@ function LoginForm() {
                           onChange={formik.handleChange}
                           onBlur={formik.handleBlur}
                           value={formik.values.email}
-                          className="wow fadeInLeft"
+                          className="wow fadeInLeft shadow-sm"
                         />
                         {formik.touched.email && formik.errors.email ? (
                           <h6 className="text-danger">{formik.errors.email}</h6>
@@ -62,7 +62,7 @@ function LoginForm() {
                           onChange={formik.handleChange}
                           onBlur={formik.handleBlur}
                           value={formik.values.password}
-                          className="wow fadeInLeft"
+                          className="wow fadeInLeft shadow-sm"
                         />
                         {formik.touched.password && formik.errors.password ? (
                           <div className="text-danger">
@@ -75,6 +75,7 @@ function LoginForm() {
                           type="submit"
                           disabled={!formik.isValid}
                           value={value.isLogin ? "Login" : "Sign up"}
+                          className="shadow-sm"
                         />
 
                         <Link to="#">Lost your password?</Link>

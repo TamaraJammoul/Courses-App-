@@ -13,7 +13,7 @@ class Home extends Component {
           <div className="site-content">
             <div className="d-flex justify-content-center">
               <div className="d-flex flex-column">
-                <h1 className="site-title wow pulse">Courses Web App</h1>
+                <h1 className="site-title wow pulse ">Courses Web App</h1>
                 <p className="site-desc wow pulse">
                   Lorem ipsum dolor sit amet
                 </p>
@@ -21,12 +21,12 @@ class Home extends Component {
                   <input
                     type="button"
                     value="Buy Course"
-                    className="btn site-btn1 px-4 py-3 mr-4 btn-dark wow fadeInLeft"
+                    className="btn site-btn1 px-4 py-3 mr-4 btn-dark wow fadeInLeft shadow-sm"
                   />
                   <input
                     type="button"
                     value="Know Features"
-                    className="btn site-btn2 px-4 py-3 mr-4 btn-light wow fadeInRight"
+                    className="btn site-btn2 px-4 py-3 mr-4 btn-light wow fadeInRight shadow-sm"
                   />
                 </div>
               </div>
@@ -46,7 +46,7 @@ class Home extends Component {
 
             <div className="row justify-content-center text-center">
               <div className="col-md-4">
-                <div className="card wow zoomIn data-wow-duration='1s' data-wow-delay='1s'">
+                <div className="card wow zoomIn shadow-sm data-wow-duration='1s' data-wow-delay='1s'">
                   <img
                     className="card-img-top "
                     src={fimg}
@@ -65,7 +65,7 @@ class Home extends Component {
                 </div>
               </div>
               <div className="col-md-4">
-                <div className="card wow zoomIn data-wow-duration='1s' data-wow-delay='1s'">
+                <div className="card  shadow-sm wow zoomIn data-wow-duration='1s' data-wow-delay='1s'">
                   <img
                     className="card-img-top "
                     src={simg}
@@ -84,7 +84,7 @@ class Home extends Component {
                 </div>
               </div>
               <div className="col-md-4">
-                <div className="card wow zoomIn data-wow-duration='1s' data-wow-delay='1s'">
+                <div className="card shadow-sm wow zoomIn data-wow-duration='1s' data-wow-delay='1s'">
                   <img
                     className="card-img-top "
                     src={timg}
@@ -125,12 +125,12 @@ class Home extends Component {
             </div>
           </div>
         </div>
-        <div className="section-3">
+        <div className="section-3 mt-5">
           <div className="container">
             <div className="row">
               <div className="col-md-4 wow fadeInLeft">
                 <div className="d-flex flex-row">
-                  <i className="fa fa-question m-2 fa-3x"></i>
+                  <i className="fa fa-question m-2 fa-3x "></i>
                   <div className="d-flex flex-column">
                     <h3 className="m-2">24/7 Support</h3>
                     <p className="m-2">
@@ -143,7 +143,7 @@ class Home extends Component {
               </div>
               <div className="col-md-4 wow fadeInDown">
                 <div className="d-flex flex-row">
-                  <i className="fa fa-home m-2 fa-3x"></i>
+                  <i className="fa fa-home m-2 fa-3x "></i>
                   <div className="d-flex flex-column">
                     <h3 className="m-2">24/7 Support</h3>
                     <p className="m-2">
@@ -156,7 +156,7 @@ class Home extends Component {
               </div>
               <div className="col-md-4 wow fadeInRight">
                 <div className="d-flex flex-row">
-                  <i class="fa fa-rocket m-2 fa-3x"></i>
+                  <i class="fa fa-rocket m-2 fa-3x "></i>
                   <div class="d-flex flex-column">
                     <h3 class="m-2">24/7 Support</h3>
                     <p class="m-2">
@@ -171,7 +171,7 @@ class Home extends Component {
             <div class="row mt-2">
               <div class="col-md-4 wow fadeInLeft">
                 <div class="d-flex flex-row">
-                  <i class="fa fa-user-shield m-2 fa-3x"></i>
+                  <i class="fa fa-user-shield m-2 fa-3x "></i>
                   <div class="d-flex flex-column">
                     <h3 class="m-2">Authorized</h3>
                     <p class="m-2">
@@ -184,7 +184,7 @@ class Home extends Component {
               </div>
               <div class="col-md-4 wow fadeInUp">
                 <div class="d-flex flex-row">
-                  <i class="fa fa-search m-2 fa-3x"></i>
+                  <i class="fa fa-search m-2 fa-3x "></i>
                   <div class="d-flex flex-column">
                     <h3 class="m-2">SEO</h3>
                     <p class="m-2">
@@ -197,7 +197,7 @@ class Home extends Component {
               </div>
               <div class="col-md-4 wow fadeInRight">
                 <div class="d-flex flex-row">
-                  <i class="fa fa-sliders-h m-2 fa-3x"></i>
+                  <i class="fa fa-sliders-h m-2 fa-3x "></i>
                   <div class="d-flex flex-column">
                     <h3 class="m-2">Customize</h3>
                     <p class="m-2">
@@ -244,15 +244,15 @@ class Home extends Component {
                 id="email"
                 placeholder="Enter your email"
                 size="40"
-                className="form-control px-4 py-2"
+                className="form-control px-4 py-2 shadow-sm"
               />
               <input
                 type="button"
                 value="Contact US"
-                className="btn btn-danger px-4 py-2"
+                className="btn btn-danger px-4 py-2 shadow-sm"
               />
             </div>
-            <div className="social m-5 WOW fadeInUpBig">
+            <div className="social m-5 WOW fadeInUpBig ">
               <div className="d-flex flex-row justify-content-center">
                 <i className="fab fa-facebook-f m-2"></i>
                 <i className="fab fa-twitter m-2"></i>
