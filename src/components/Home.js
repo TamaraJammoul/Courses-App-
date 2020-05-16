@@ -4,6 +4,7 @@ import sec4 from "./../img/pexels-photo-1181298.png";
 import fimg from "./../img/wood-coffee-iphone-notebook.png";
 import simg from "./../img/people-woman-coffee-meeting.png";
 import timg from "./../img/pexels-photo-2115217.png";
+import CountUp from "react-countup";
 
 class Home extends Component {
   render() {
@@ -13,9 +14,11 @@ class Home extends Component {
           <div className="site-content">
             <div className="d-flex justify-content-center">
               <div className="d-flex flex-column">
-                <h1 className="site-title wow pulse ">Courses Web App</h1>
+                <h1 className="site-title wow pulse ">
+                  Get more than 1000 Courses
+                </h1>
                 <p className="site-desc wow pulse">
-                  Lorem ipsum dolor sit amet
+                  build your academic knowledge
                 </p>
                 <div className="d-flex flex-row ">
                   <input
@@ -28,6 +31,46 @@ class Home extends Component {
                     value="Know Features"
                     className="btn site-btn2 px-4 py-3 mr-4 btn-light wow fadeInRight shadow-sm"
                   />
+                </div>
+              </div>
+            </div>
+            <div className="container mr-5">
+              <div className="row mb-5 justify-content-center">
+                <div className="col-md-4  ">
+                  {" "}
+                  <h1 className="countup">
+                    <CountUp
+                      start={0}
+                      end={1000}
+                      duration={2.75}
+                      separator=","
+                    />
+                  </h1>
+                  <h2>Course</h2>
+                </div>
+                <div className="col-md-4">
+                  {" "}
+                  <h1 className="countup">
+                    <CountUp
+                      start={0}
+                      end={12000}
+                      duration={2.75}
+                      separator=","
+                    />
+                  </h1>
+                  <h2>Student</h2>
+                </div>
+                <div className="col-md-4 ">
+                  {" "}
+                  <h1 className="countup">
+                    <CountUp
+                      start={0}
+                      end={300}
+                      duration={2.75}
+                      separator=","
+                    />
+                  </h1>
+                  <h3>Teacher</h3>
                 </div>
               </div>
             </div>

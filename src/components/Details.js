@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { ProductConsumer } from "../context";
 import { ButtonContainer } from "./Button";
 import { Link } from "react-router-dom";
+import ReactPlayer from "react-player";
 export default class Details extends Component {
   state = {
     highlighted: -1,
@@ -66,7 +67,7 @@ export default class Details extends Component {
                 </div>
               </div>
               {/* end of title */}
-              <div className="row">
+              <div className="row mb-5">
                 <div className="col-10 mx-auto col-md-6 my-3">
                   <img src={img} className="img-fluid" alt="" />
                 </div>
@@ -120,6 +121,114 @@ export default class Details extends Component {
                       {inCart ? "in cart" : "add to cart"}
                     </ButtonContainer>
                   </div>
+                </div>
+              </div>
+              <div className="row mt-5">
+                <div className="col-md-6">
+                  <h2>Course Sections</h2>
+                  <div className="row">
+                    <div className="col-md-12 mt-5">
+                      <div class="btn-group ">
+                        <button type="button" class="btn btn-danger">
+                          Section one
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">
+                            skjhajkh
+                          </a>
+                          <a class="dropdown-item" href="#">
+                            Another action
+                          </a>
+                          <a class="dropdown-item" href="#">
+                            Something else here
+                          </a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">
+                            Separated link
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-12 mt-5">
+                      <div class="btn-group ">
+                        <button type="button" class="btn btn-danger">
+                          Section two
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">
+                            Action
+                          </a>
+                          <a class="dropdown-item" href="#">
+                            Another action
+                          </a>
+                          <a class="dropdown-item" href="#">
+                            Something else here
+                          </a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">
+                            Separated link
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-12 mt-5">
+                      {" "}
+                      <div class="btn-group ">
+                        <button type="button" class="btn btn-danger">
+                          Section three
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">
+                            Action
+                          </a>
+                          <a class="dropdown-item" href="#">
+                            Another action
+                          </a>
+                          <a class="dropdown-item" href="#">
+                            Something else here
+                          </a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">
+                            Separated link
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-md-6">
+                  <ReactPlayer
+                    controls
+                    url="https://www.youtube.com/watch?v=7sDY4m8KNLc&t=300s"
+                  />
                 </div>
               </div>
             </div>

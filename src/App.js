@@ -28,7 +28,10 @@ class App extends Component {
     return (
       <div>
         {this.state.loading ? (
-          <DotScale color="#aa3939" size="60px" duration="5s" />
+          <div className=" loading">
+            {" "}
+            <DotScale color="#aa3939" size="60px" duration="5s" />
+          </div>
         ) : (
           <React.Fragment>
             <Navbar />

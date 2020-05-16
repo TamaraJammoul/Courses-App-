@@ -79,7 +79,9 @@ function LoginForm() {
                         />
 
                         <Link to="#">Lost your password?</Link>
-                        <Link to="#">Register</Link>
+                        <Link to="#">
+                          {value.isLogin ? "Sign up" : "Login"}
+                        </Link>
                       </div>
                     </form>
                     <div className="logbutton">

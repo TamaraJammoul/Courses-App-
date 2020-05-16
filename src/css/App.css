@@ -8,6 +8,14 @@
     --mainYellow: #d56b6b;
 }
 
+.countup {
+    color: var(--mainWhite);
+}
+
+.loading {
+    margin-top: 25%;
+}
+
 .text-title {
     font-family: "Permanent Marker", cursive;
     letter-spacing: 0.3rem;
