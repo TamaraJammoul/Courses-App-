@@ -8,6 +8,10 @@
     --mainYellow: #d56b6b;
 }
 
+#dropdownMenuButton {
+    width: 700px;
+}
+
 .countup {
     color: var(--mainWhite);
 }
